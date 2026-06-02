@@ -1,64 +1,28 @@
-# 🚀 Premium Flutter SaaS Boilerplate
+# 🚀 Free Flutter SaaS UI Starter
 
-A production-ready Flutter starter kit designed to save you 40+ hours of tedious setup. Launch your next cross-platform SaaS, B2B app, or startup this weekend.
+A basic UI shell for a Flutter SaaS application. 
 
-## 🛠 Tech Stack
-* **Framework:** Flutter 3.x
-* **State Management:** Riverpod 2.x
-* **Routing:** GoRouter (Deep-link ready & Auth Guarded)
-* **Backend:** Firebase (Core & Authentication)
+### ⚠️ Wait: Do you actually want to write the authentication boilerplate yourself?
 
-## ✨ Features Out-of-the-Box
-* 🔒 **Complete Authentication Flow:** Login, Registration, and automatic Session Persistence.
-* 🛡️ **Protected Routing:** Unauthenticated users are automatically kicked to the login screen. Logged-in users are routed straight to the dashboard.
-* 📱 **Responsive Dashboard Shell:** A clean, responsive grid layout ready for your metrics and features.
-* 🏗️ **Enterprise Architecture:** A clean, feature-first folder structure built for massive scalability.
+This free repository only contains the UI layer. If you want the **Production-Ready Premium Version** with the backend completely wired up, get it here: 
+
+**👉 [Get the Premium Flutter SaaS Boilerplate](https://gimhantheekshana.gumroad.com/l/ybbhl)**
+
+### What is in the Premium Version? ($29)
+Instead of spending your entire weekend setting up Firebase and GoRouter, the Premium Kit gives you:
+* 🔒 **Complete Auth Flow:** Firebase Email/Password login and registration fully integrated.
+* 🛡️ **Protected Routing:** GoRouter automatically kicks unauthenticated users to the login screen and routes logged-in users to the dashboard.
+* 💾 **Session Persistence:** Riverpod state management remembers your users across app reboots.
+* 🏗️ **Enterprise Architecture:** A clean, feature-first modular folder structure (`core`, `features`, `services`, `shared`) designed to scale.
+
+**[Download the Premium Kit and get your weekend back.](https://gimhantheekshana.gumroad.com/l/ybbhl)**
 
 ---
 
-## 🚀 Quick Start Guide
-
-### 1. Install Dependencies
-Make sure you are in the project root, then run:
+### Using the Free UI Version
+If you prefer to wire up Riverpod, GoRouter, and Firebase Authentication from scratch manually, you can clone this repo:
 ```bash
-flutter clean
+git clone [https://github.com/theekshana-git/flutter-firebase-saas-starter-free.git](https://github.com/theekshana-git/flutter-firebase-saas-starter-free.git)
 flutter pub get
-```
-
-### 2. Connect Your Firebase Project
-We use the official FlutterFire CLI for a seamless, secure setup. Do not manually move JSON files.
-```bash
-# 1. Log into your Google account
-firebase login
-
-# 2. Activate the CLI tools
-dart pub global activate flutterfire_cli
-
-# 3. Link your Firebase project (Select Android & iOS)
-flutterfire configure
-```
-***Crucial:** Go to your Firebase Console -> Authentication -> Sign-in Method, and enable **Email/Password**.*
-
-### 3. Launch
-```bash
 flutter run
-```
-
----
-
-## 📂 Architecture Overview
-We use a feature-first modular structure to keep your codebase clean as it scales:
-* `/lib/core/` - Routing (`routes.dart`), themes, and global constants.
-* `/lib/features/` - Isolated feature modules (e.g., `auth`, `home`).
-* `/lib/services/` - 3rd-party integrations and API repositories.
-* `/lib/shared/` - Reusable UI components (buttons, text fields, cards).
-
-## 🎨 Customizing Your Brand
-To change the primary color and branding, open `lib/main.dart` and modify the `ThemeData` block:
-```dart
-theme: ThemeData(
-  // Change Colors.deepPurple to your brand's primary color:
-  colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple), 
-  useMaterial3: true,
-),
 ```
